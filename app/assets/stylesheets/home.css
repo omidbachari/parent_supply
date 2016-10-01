@@ -1,0 +1,48 @@
+.navbar {
+  background-color: lightblue;
+}
+
+.logo {
+  color: white;
+}
+
+.logo-title {
+  color: inherit;
+}
+
+.top-page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  height: 800px;
+}
+
+.upper-headline {
+  height: 30%;
+}
+
+.headline {
+  font-size: 2em;
+}
+
+.center-piece {
+  height: 30%;
+}
+
+.lower-headline {
+  height: 30%;
+}
+
+.middle-page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  height: 800px;
+}
+
+.bottom-page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  height: 800px;
+}
