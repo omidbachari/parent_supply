@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>ParentSupply</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Parent Supply - Weekly Bundles of Discovery for the Kids</title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <ul class="vertical medium-horizontal menu navbar">
+      <li class="logo"><a class="logo-title" href="#" data-toggle="offCanvas">Parent Supply</a></li>
+    </ul>
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+              <li><a href="#">Start</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
+            <%= yield %>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
